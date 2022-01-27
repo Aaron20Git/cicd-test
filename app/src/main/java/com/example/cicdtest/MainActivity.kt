@@ -12,5 +12,8 @@ class MainActivity : AppCompatActivity() {
         val tvTitle = findViewById<TextView>(R.id.tv_title)
 
         tvTitle.text = "Hello World. This is CICD Test"
+
+        // 第一次更改
+        tvTitle.text = "Hello World. This is CICD Test, First Change"
     }
 }
