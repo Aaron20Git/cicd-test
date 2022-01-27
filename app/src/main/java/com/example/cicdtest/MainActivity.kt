@@ -15,5 +15,6 @@ class MainActivity : AppCompatActivity() {
 
         // 第一次更改
         tvTitle.text = "Hello World. This is CICD Test, First Change"
+        tvTitle.text = "Hello World. This is CICD Test, 2 Change"
     }
 }
