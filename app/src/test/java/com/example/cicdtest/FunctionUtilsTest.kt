@@ -62,7 +62,6 @@ class FunctionUtilsTest {
             "1asas2",
             "1asas2"
         )
-//        assertThat(result).isFalse()
-        assertThat(result).isTrue()
+        assertThat(result).isFalse()
     }
 }
