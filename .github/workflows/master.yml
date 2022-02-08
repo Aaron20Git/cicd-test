@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: lint.html
-          path: app/build/reports/test/LintResult/LintR
+          path: app/build/reports/lint-results-debug.html
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -58,5 +58,5 @@ jobs:
       - name: Upload unit test report
         uses: actions/upload-artifact@v2
         with:
-          name: unitTest.html
-          path: app/build/reports/test/UnitTestResult/UT
+          name: unit_test_report.html
+          path: app/build/reports/tests/testDebugUnitTest/
