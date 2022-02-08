@@ -59,4 +59,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: unitTest.html
-          path: app/build/reports/tests/testDebugUnitTest/unit-test-report.html
+          path: app/build/reports/tests/testDebugUnitTest/
