@@ -58,5 +58,5 @@ jobs:
       - name: Upload unit test report
         uses: actions/upload-artifact@v2
         with:
-          name: unit_test_report.html
-          path: app/build/reports/tests/testDebugUnitTest/
+          name: unitTest.html
+          path: app/build/reports/tests/testDebugUnitTest/unit-test-report.html
