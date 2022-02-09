@@ -6,5 +6,6 @@ class ResourceComparer {
 
     fun isEqual(ctx: Context, resId: Int, string: String): Boolean {
         return ctx.getString(resId) == string
+
     }
 }
