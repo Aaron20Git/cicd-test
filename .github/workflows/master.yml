@@ -67,12 +67,15 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
+        with:
+          java-version: 11
 
       - name: Run espresso tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
           arch: x86
+          java-version: 11
           disable-animations: true
           script: ./gradlew connectedCheck --stacktrace
 
