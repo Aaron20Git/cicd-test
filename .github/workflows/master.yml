@@ -72,7 +72,9 @@ jobs:
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
-          script: ./gradlew connectedCheck
+          arch: x86
+          disable-animations: true
+          script: ./gradlew connectedCheck --stacktrace
 
       - name: Upload test report
         uses: actions/upload-artifact@v2
