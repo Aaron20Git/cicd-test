@@ -68,11 +68,11 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
 
-      - name: sttup
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'zulu' # See 'Supported distributions' for available options
-          java-version: '11'
+#      - name: sttup
+#        uses: actions/setup-java@v2
+#        with:
+#          distribution: 'zulu' # See 'Supported distributions' for available options
+#          java-version: '11'
 
       - name: Run espresso tests
         uses: reactivecircus/android-emulator-runner@v2
