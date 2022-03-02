@@ -32,7 +32,8 @@ class FunctionUtilsTest {
             "123",
             "123"
         )
-        assertThat(result).isFalse()
+//        assertThat(result).isFalse()
+        assertThat(result).isTrue()
     }
 
     @Test
