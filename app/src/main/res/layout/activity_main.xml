@@ -7,13 +7,79 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_title_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APP名稱驗證"
+        app:layout_constraintBottom_toTopOf="@id/et_app_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入APP正確名稱"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_appname"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_appname"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_appname" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_app_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APP名驗證"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_app_name" />
+
+    <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="註冊驗證"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入姓名"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入密碼"
+        app:layout_constraintEnd_toEndOf="@+id/et_name"
+        app:layout_constraintStart_toStartOf="@+id/et_name"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <EditText
+        android:id="@+id/et_password_doublecheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請再次輸入密碼"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="註冊驗證"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_doublecheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
