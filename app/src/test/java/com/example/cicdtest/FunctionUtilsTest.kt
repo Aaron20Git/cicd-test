@@ -34,9 +34,9 @@ class FunctionUtilsTest {
         )
 
         // test for PASS
-        assertThat(result).isFalse()
+//        assertThat(result).isFalse()
         // test for Fail
-//        assertThat(result).isTrue()
+        assertThat(result).isTrue()
     }
 
     @Test
