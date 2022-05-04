@@ -46,7 +46,7 @@ jobs:
           echo test, and deploy your project.master
 
   unit-test:
-    needs: [ lint ]
+#    needs: [ lint ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
@@ -62,7 +62,7 @@ jobs:
           path: app/build/reports/tests/testDebugUnitTest/
 
   instrumentation-test:
-    needs: [ unit-test ]
+#    needs: [ unit-test ]
     runs-on: macos-latest
     steps:
       - name: Checkout the code
